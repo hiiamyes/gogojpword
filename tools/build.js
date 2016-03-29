@@ -6,7 +6,7 @@ import webpackConfigBuilder from '../webpack.config';
 import colors from 'colors';
 import { argv as args } from 'yargs';
 
-process.env.NODE_ENV = 'development'; // this assures React is built in prod mode and that the Babel dev config doesn't apply.
+process.env.NODE_ENV = 'production'; // this assures React is built in prod mode and that the Babel dev config doesn't apply.
 
 const webpackConfig = webpackConfigBuilder(process.env.NODE_ENV);
 

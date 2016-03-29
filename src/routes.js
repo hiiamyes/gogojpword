@@ -4,7 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './containers/App';
 
 export default (
-  <Route path="*">
+  <Route path="/">
     <IndexRoute component={App} />
   </Route>
 );
